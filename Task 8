@@ -10,9 +10,9 @@ namespace Ijunior_Task8
             Console.WriteLine("Сколько старушек вы видите в очереди?");
             int peopleInLine = int.Parse(Console.ReadLine());
 
-            int myWaitingTime = receptionTime * peopleInLine;
-            int hourWait = myWaitingTime / minutesInHour;
-            int minuteWait = myWaitingTime % minutesInHour;
+            int waitingTimeInLine = receptionTime * peopleInLine;
+            int hourWait = waitingTimeInLine / minutesInHour;
+            int minuteWait = waitingTimeInLine % minutesInHour;
             Console.WriteLine("Вы должны отстоять в очереди " + hourWait + " часов и " + minuteWait + " минут.");
 
             Console.ReadKey();
